@@ -28,11 +28,14 @@ let getCountryNameFromCountryCode = async (code) => {
 };
 
 let getCountryFromCountryName = async (name) => {
-    let aName = name.split(' ');
-    let uName = '';
-    aName.forEach(e => {
-        uName += e.charAt(0).toUpperCase() + e.slice(1);
-    });
+    // let aName = name.split(' ');
+    // let uName = '';
+    // aName.forEach(e => {
+    //     uName += e.charAt(0).toUpperCase() + e.slice(1);
+    // });
+
+    // console.log(aName, name);
+    let uName = name.replace(' ', '%20')
     
     let url = `${BASE_UTL}/v3.1/name/${uName}`;
     let req = await fetch(url);

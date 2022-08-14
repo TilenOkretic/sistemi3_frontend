@@ -16,6 +16,7 @@ import { createPopupHolders } from '../../sketchfab_webpack_engine/utils/popup/h
 import { createPopupWrappers } from '../../sketchfab_webpack_engine/utils/popup/wrapper';
 import { createOptionalInfo } from '../../sketchfab_webpack_engine/utils/popup/optionalInfo';
 import { createPopupFormSubmit } from '../../sketchfab_webpack_engine/utils/popup/form';
+import { log } from '../../sketchfab_webpack_engine/logger';
 
 export default class ConfigFinish extends Component {
 
