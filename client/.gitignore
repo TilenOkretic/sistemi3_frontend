@@ -1,7 +1,0 @@
-.env
-local_backup/
-node_modules/
-dist/
-./minify
-./run-dev
-./updateUpload
