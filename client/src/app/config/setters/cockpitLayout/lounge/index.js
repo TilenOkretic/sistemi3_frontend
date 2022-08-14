@@ -2,13 +2,14 @@ import { disableHTMLButton } from '../../../../../sketchfab_webpack_engine/utils
 import { enableHTMLButton } from '../../../../../sketchfab_webpack_engine/utils/buttons/enable';
 import { enableHTMLList } from '../../../../../sketchfab_webpack_engine/utils/list/enable';
 import { clearSelection, showSelection } from '../../../../../sketchfab_webpack_engine/utils/selection';
-import { setHasGalleyKitchen } from '../../extraEquipment';
+import { setHasDeckTable, setHasGalleyKitchen } from '../../extraEquipment';
 import { setHasStarboardBench } from '../../extraEquipment/starboardBench';
 
 // TODO: move this function
 export let setLoungeLayoutConfigs = (api) => {
     setHasGalleyKitchen(false, api);
-    setHasStarboardBench(true, api); 
+    setHasStarboardBench(true, api);
+    setHasDeckTable(true, api);
     
     enableHTMLList('extra-rearbenchconfiguration-btn', 'rearbenchconfiguration-list');
     enableHTMLList('extra-tableconfiguration-btn', 'tableconfiguration-list');

@@ -59,6 +59,16 @@ let setHasDeckTable = (deckTable, api) => {
     return getHasExtraEquipment('tableConfiguration','deckTable', api);
 };
 
+let setHasLoungeTable = (deckTable, api) => {
+    if(deckTable) {
+        pushExtraEquipment('tableConfiguration', 'loungeTable', api);
+    } else {
+        popExtraEquipment('tableConfiguration', api);
+    }
+    
+    return getHasExtraEquipment('tableConfiguration','loungeTable', api);
+};
+
 let setHasBowCushioning = (bowCushioning, api) => {
     bowCushioning ? pushExtraEquipment('bowCushioning', 'bowCushioning', api) : popExtraEquipment('bowCushioning', api);
     
@@ -99,6 +109,7 @@ export {
     setHasRearBench,
     setHasWindshield,
     setHasDeckTable,
+    setHasLoungeTable,
     setHasBowCushioning,
     setHasFrontGuardRail,
     setHasSunbedTent,

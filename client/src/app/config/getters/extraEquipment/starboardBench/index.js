@@ -1,3 +1,3 @@
 import { getHasExtraEquipment } from '..';
 
-export let getHasStarboardBench = (api) => getHasExtraEquipment('starboardBench', api);
+export let getHasStarboardBench = (api) => getHasExtraEquipment('starboardBench', 'starboardBench', api);

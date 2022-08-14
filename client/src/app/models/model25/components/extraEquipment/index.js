@@ -5,6 +5,8 @@ import { createRearBenchConfigurationButton } from '../../../../utils/component/
 import { createRearBenchConfigurationList } from '../../../../utils/component/extraEquipment/rearBenchConfiguration/list';
 import { createSideRailsButton } from '../../../../utils/component/extraEquipment/sideRailsConfiguration/button';
 import { createSideRailsList } from '../../../../utils/component/extraEquipment/sideRailsConfiguration/list';
+import { createTableConfigurationButton } from '../../../../utils/component/extraEquipment/tableConfiguration/button';
+import { createTableConfigurationList } from '../../../../utils/component/extraEquipment/tableConfiguration/list';
 
 
 export default (parent, api) => {
@@ -12,7 +14,12 @@ export default (parent, api) => {
     let REARBENCH_CONFIGURATION_BUTTON = createRearBenchConfigurationButton(api);
     let REARBENCH_CONFIGURATION_LIST = createRearBenchConfigurationList(api);
 
-    let DKT_BTN = addCockpitExtra('dkt', api);
+    let TABLE_CONFIGURATION_BUTTON = createTableConfigurationButton(api);
+    let TABLE_CONFIGURATION_LIST = createTableConfigurationList(api);
+
+    // DEPRICATED: functionality moved to table configuration
+    // let DKT_BTN = addCockpitExtra('dkt', api);
+    
     let BSC_BTN = addCockpitExtra('bsc', api);
     
     let SIDE_RAILS_LIST = createSideRailsList(api);
@@ -24,7 +31,8 @@ export default (parent, api) => {
     parent.addSubElement(REARBENCH_CONFIGURATION_BUTTON);
     parent.addSubElement(REARBENCH_CONFIGURATION_LIST);
 
-    parent.addSubElement(DKT_BTN);
+    parent.addSubElement(TABLE_CONFIGURATION_BUTTON);
+    parent.addSubElement(TABLE_CONFIGURATION_LIST);
     parent.addSubElement(BSC_BTN);
     parent.addSubElement(SIDE_RAILS_BUTTON);
     parent.addSubElement(SIDE_RAILS_LIST);
@@ -36,6 +44,6 @@ export default (parent, api) => {
     disableHTMLButton('extra-rearbenchconfiguration-starboardBench-btn');
     disableHTMLButton('extra-rearbenchconfiguration-codriverSeat-btn');
     showSelection('extra-siderail-chrome');
-    showSelection(DKT_BTN);
+    showSelection('extra-tableconfiguration-normal');
     showSelection(FGR_BTN);
 };
