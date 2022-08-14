@@ -1,0 +1,17 @@
+@import '../variables';
+
+.disabled {
+    color: $disabled !important;
+    border: none !important;
+}
+
+.disabled p {
+    color: $disabled !important;
+}
+
+.disabled img {
+    border-color: $disabled !important;
+    // filter: grayscale(2) !important;
+    // -webkit-filter: grayscale(2) !important;
+    display: none;    
+}

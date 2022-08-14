@@ -1,0 +1,119 @@
+{
+    "lang": "en",
+
+    "title": "Boat Configurator",
+
+    
+    "hull-and-motorization": "hull type and motorization",
+    "hull-and-motorization-21": "motorization",
+    "displacement-btn": "electric displacement",
+    "planing-btn": "motor planing",
+    "electric-propulsion-btn": "electric propulsion",
+    "motor-propulsion-btn": "motor propulsion",
+    
+    "motor-planing-1-outboard-btn": "1x outboard motor",
+    "motor-planing-2-outboard-btn": "2x outboard motor",
+    "motor-planing-1-inboard-btn": "1x inboard motor",
+    "motor-planing-2-inboard-btn": "2x inboard motor",
+    "motor-1-electric-inboard-btn": "1x electric inboard",
+    "motor-1-electric-outboard-btn": "1x electric outboard",
+    "motor-1-motor-outboard-btn": "1x outboard motor",
+    "motor-displacement-1-inboard-btn": "1x electric inboard",
+    "motor-displacement-2-inboard-btn": "2x electric inboard",
+    
+    "cockpit-layout": "cockpit layout",
+    "cockpit-layout-standard": "standard layout",
+    "cockpit-layout-passenger": "passenger layout",
+    "cockpit-layout-lounge":"lounge layout",
+    "console-layout-central": "console center",
+    "console-layout-side": "console lateral/side",
+    
+    "bathing-platform": "bathing platform",
+    "bathingPlatform-no-platform": "no platform",
+    "bathingPlatform-pbpfl-platform": "permateek bathing platform with folding ladder",
+    
+    "color-selection": "color selection",
+    "lwr-btn": "hull color",
+    "upr-btn": "deck color",
+    "fll-btn": "full color",
+    "clear-btn": "clear",
+    
+    "darkAntracite": "dark anthracite",
+    "marineBlue": "marine blue",
+    "pigeonBlue": "pigeon blue",
+    "pureGrey": "pure gray",
+    "royalBlue": "royal blue",
+    "saphirGrey": "sapphire gray",
+    "white": "white",
+    
+    "upholstery": "upholstery options",
+    "upholstery-outer-btn": "outer upholstery",
+    "upholstery-inner-btn": "inner upholstery",
+    "upholstery-piping-btn": "piping",
+    "mercury": "mercury",
+    "snow": "snow",
+    "tapioca": "tapioca",
+    "taupe": "taupe",
+    "tonic": "tonic",
+    "tonicDiamonds": "tonic diamonds",
+    
+    "roof-solutions": "roof solutions",
+    "roofSolutions-no-btn": "no roof",
+    "roofSolutions-hht-btn": "hydraulic hard top",
+    "roofSolutions-ttop-btn": "T-top",
+    "roofSolutions-bsm-btn": "bimini",
+    "roofSolutions-bst-btn": "bimini",
+    "roofSolutions-bsh-btn": "sprayhood bimini",
+    
+    "extra-equipment": "extra equipment",
+
+    "extra-rearbenchconfiguration-btn": "rear bench configuration",
+    "extra-rearbenchconfiguration-galleyKitchen-btn": "galley kitchen",
+    "extra-rearbenchconfiguration-rearBench-btn": "rear bench",
+    "extra-rearbenchconfiguration-starboardBench-btn": "starboard bench",
+    "extra-rearbenchconfiguration-codriverSeat-btn": "co driver seat",
+    
+    "extra-tableconfiguration-btn": "table configuration",
+    "extra-tableconfiguration-normal": "deck table",
+    "extra-tableconfiguration-loungeLayout": "deck table lounge layout",
+    
+    "extra-bsc-btn": "bow sunbathing cushions",
+
+    "extra-siderails": "side rails configuration",
+    "extra-siderail-chrome": "stainless steel fender profiles",
+    "extra-siderail-black": "fender profiles",
+    
+    "extra-fgr-btn": "foredeck stainless steel rails",
+    "extra-snbd-tent-btn": "sunbed tent",
+    "extra-mch-btn": "storage consoles behind helm seats",
+    
+    "extra-steeringwheel": "steering wheel configuration",
+    "extra-steeringwheel-rubber": "steering wheel rubber",
+    "extra-steeringwheel-wood": "steering wheel wood",
+    
+    "extra-wds-btn": "windshield",
+    "extra-mac-btn": "marine carpet",
+    "extra-ads-btn": "additional storage",
+    
+    "configuration-finish": "configuration finish",
+    "alertProcessing": "you need to check allow data processing to proceed",
+    "continue": "continue",
+    "alertBackendError": "there was an error while accessing configurator backend!",
+    "enterEmail": "please enter your e-mail address to acquire an informational inquiry",
+    "extraInformation": "extra information (optional)",
+    "allowMarketing": "allow marketing (optional)",
+    "allowDataProcessing": "allow data processing",
+    "submit": "send inquiry",
+    
+    "__comment": "vsaka vrstica v tej zbirki loadingtext predsttavlja en stavek ki se bo prikazal ob nalaganju konfiguratorja",
+    "loadingtext": [
+        ". loading .",
+        ". . loading . .",
+        ". . . loading . . .",
+        ". . . . loading . . . ."
+    ],
+    "__comment_2": "Od tle naprej je novo ~ nima prevoda v vse jezike!",
+    "rts-btn": "Return to model selection",
+    "countryInputLabel": "country",
+    "alertCountry": "you need to enter a valid country name"
+}

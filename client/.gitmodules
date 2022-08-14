@@ -1,0 +1,6 @@
+[submodule "min"]
+	path = build
+	url = https://github.com/TilenOkretic/boat_configurator_production.git
+[submodule "src/sketchfab_webpack_engine"]
+	path = src/sketchfab_webpack_engine
+	url = https://github.com/TilenOkretic/SWEN.git

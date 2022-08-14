@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "build",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: build",
+            "detail": "NODE_ENV=production webpack --config webpack.prod.js"
+        },
+        {
+            "type": "npm",
+            "script": "dev",
+            "group": "test",
+            "problemMatcher": [],
+            "label": "npm: dev",
+            "detail": "webpack serve --config webpack.dev.js",
+        },
+        {
+            "label": "Publish to production",
+            "type": "shell",
+            "command": "${workspaceRoot}/publish",
+            "group": "test",
+            "detail": "Publish built files to production GIT"
+        }
+
+    ]
+}

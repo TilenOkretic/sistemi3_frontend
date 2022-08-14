@@ -1,0 +1,13 @@
+
+// phones
+@media only screen and (max-width:1024px) {
+
+    #app {
+        flex-direction: column !important;
+    }
+
+    #wrapper {
+        position: relative !important;
+        width: 100% !important;
+    }
+}

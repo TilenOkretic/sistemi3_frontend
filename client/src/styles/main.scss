@@ -1,0 +1,78 @@
+@import './abstracts/variables';
+@import './abstracts/animations';
+@import './abstracts/utilityClasses';
+@import './mobile';
+
+* {  
+    color: $pr-color;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-collapse: collapse;
+    font-size: responsive !important;
+    font-family: $fontFamily;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: $bg-color;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    border: 0.18rem solid $pr-color;
+    border-radius: 0.45rem;
+}
+
+.bg-transparent-white {
+    background: $bg-transparent-white;
+}
+
+.indent {
+    margin-left: 2rem !important;
+}
+
+.on-hover {
+    cursor: pointer;
+    transition: transform $zoomSpeed ease-in-out !important;
+}
+
+.on-hover:hover {
+    transform: scale($zoomOutRange, $zoomOutRange) !important;
+}
+
+#loading-span {
+    animation: popInOut 1.75s
+}
+
+.button-hover:after {
+   content: '';  
+   display: block;  
+   margin: auto;  
+   height: 0.15rem;  
+   width: 0px;  
+   background: black;  
+   transition: all 0.22s linear;
+}
+
+.button-hover:hover:after {
+    width: 100%;
+}
+
+.button-selected::after {
+    content: '';  
+    display: block;  
+    margin: auto;  
+    height: 0.15rem;  
+    width: 100%;  
+    background: black; 
+}
+
+.popInOutElement { 
+    animation: popInOut 0.75s;
+}

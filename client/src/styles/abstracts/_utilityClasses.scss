@@ -1,0 +1,36 @@
+@import './utility/heightUtility';
+@import './utility/widthUtility';
+@import './utility/paddingUtility';
+@import './utility/marginUtility';
+@import './utility/borderUtility';
+@import './utility/buttonUtility';
+
+// general
+
+.background-size-100 {
+    background-size: 100% !important;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden !important;
+}
+
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.white-space-nowrap {
+    white-space: nowrap !important;
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis !important;
+}
+
+.text-first-letter-capital::first-letter {
+    text-transform: uppercase !important;
+}

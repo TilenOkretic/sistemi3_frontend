@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "boat_configurator",
+  "description": "Boat configurator project",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "build": "NODE_ENV=production webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TilenOkretic/boat_configurator.git"
+  },
+  "keywords": [],
+  "author": "Tilen Okretic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TilenOkretic/boat_configurator/issues"
+  },
+  "homepage": "https://github.com/TilenOkretic/boat_configurator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.6.0",
+    "cssnano": "^5.0.17",
+    "dotenv-webpack": "^7.1.0",
+    "esbuild-loader": "^2.18.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.6",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.1",
+    "rucksack-css": "^1.0.2",
+    "sass": "^1.49.8",
+    "sass-loader": "^12.6.0",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "engines": {
+    "node": ">=17.1.0"
+  }
+}
