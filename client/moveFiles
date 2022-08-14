@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo
+
+if [ -f "../client_server/public/index.html" ]
+then
+	echo 'Clearing ../client_server/public/';
+	rm -r ../client_server/public/*;
+fi
+
+echo
+echo 'Moving files from ./dist/ to ../client_server/public/';
+
+cp -r ./dist/* ../client_server/public/;
+
