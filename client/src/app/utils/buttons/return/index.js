@@ -17,7 +17,7 @@ export let createReturnButton = (api) => {
     addClass(translationBtn, 'text-center');
     addClass(translationBtn, 'bg-transparent');
     addClass(translationBtn, 'border-0');
-    addClass(translationBtn, 'button-hover');
+    addClass(translationBtn, 'on-hover');
     addClass(translationBtn, 'text-capitalize');
 
     translationBtn.addEventListener('click', ()=>{ openModelSelection(api); });
