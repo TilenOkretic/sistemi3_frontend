@@ -11,6 +11,7 @@ export default (response, cardText, api) => {
             rm.id = 'rsp-msg';
 
             let [ message, orderID ] = msg.split(':');
+            orderID = orderID.replace(' ', '');
 
             if (orderID) {
                 setOrderId(orderID, api);
