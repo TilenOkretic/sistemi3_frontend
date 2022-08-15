@@ -23,4 +23,5 @@ export let loadCentralConsoleLayout = (api) => {
     
     showSelection('extra-rearbenchconfiguration-rearBench-btn');
     clearSelection('extra-rearbenchconfiguration-galleyKitchen-btn');
+    showSelection('extra-tableconfiguration-normal');
 };
