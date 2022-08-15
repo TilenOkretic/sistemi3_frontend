@@ -58,14 +58,6 @@ export default class BoatConfigurator extends Application {
         }
         
         setupLanguageButtons(api);
-
-        let btn = createElement('button', 'test');
-        btn.textContent = 'test';
-        btn.addEventListener('click', () => {
-            console.log(api.defaultConfig);
-        });
-
-        document.body.appendChild(btn);
     }
 
     loadComponents(api) {
