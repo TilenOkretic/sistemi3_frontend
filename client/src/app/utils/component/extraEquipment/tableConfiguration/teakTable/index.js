@@ -8,6 +8,9 @@ import { getRegexForTableCushioning } from '../../../../../regexLib/upholstery/t
 
 export let loadNormalDeckTable = async (api) => {
     if(!getHasDeckTable(api)){ 
+        setHasLoungeTable(false, api);
+        setHasDeckTable(true, api);
+        !api.isModel21() ? clearSelection('extra-tableconfiguration-loungeLayout') : '';
         showElement(getRegexForDeckTable(), api);
         if(!api.isModel21()) {
             hideElement(getRegexForDeckTableLoungeLayout(), api);
@@ -17,10 +20,8 @@ export let loadNormalDeckTable = async (api) => {
             ], api);
         }
     } else {
+        setHasDeckTable(false, api);
         hideElement(getRegexForDeckTable(), api);
+        clearSelection('extra-tableconfiguration-normal');
     }
-    setHasLoungeTable(false, api);
-    setHasDeckTable(!getHasDeckTable(api), api);
-    !api.isModel21() ? clearSelection('extra-tableconfiguration-loungeLayout') : '';
-    !getHasDeckTable(api) ? clearSelection('extra-tableconfiguration-normal') : '';
 };

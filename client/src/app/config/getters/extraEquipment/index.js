@@ -18,6 +18,8 @@ let getHasWindshield = (api) => getHasExtraEquipment('windshield', 'windshield',
 
 let getHasDeckTable = (api) => getHasExtraEquipment('tableConfiguration', 'deckTable', api);
 
+let getHasLoungeTable = (api) => getHasExtraEquipment('tableConfiguration', 'loungeTable', api);
+
 let getHasBowCushioning = (api) => getHasExtraEquipment('bowCushioning', 'bowCushioning', api);
 
 let getHasFrontGuardRail = (api) => getHasExtraEquipment('frontGuardRail', 'frontGuardRail', api);
@@ -34,6 +36,7 @@ export {
     getHasRearBench,
     getHasWindshield,
     getHasDeckTable,
+    getHasLoungeTable,
     getHasBowCushioning,
     getHasFrontGuardRail,
     getHasSunbedTent,
