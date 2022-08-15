@@ -8,13 +8,14 @@ import { setHasStarboardBench } from '../../extraEquipment/starboardBench';
 
 // TODO: move this function
 export let setStandardLayoutConfigs = (api) => {
+    setHasGalleyKitchen(false, api);
     setHasRearBench(true, api);
     setHasDeckTable(true, api);
-    setHasGalleyKitchen(false, api);
     setHasStarboardBench(true, api);
     
     enableHTMLList('extra-rearbenchconfiguration-btn', 'rearbenchconfiguration-list');
     enableHTMLList('extra-tableconfiguration-btn', 'tableconfiguration-list');
+    enableHTMLButton('extra-rearbenchconfiguration-galleyKitchen-btn');
 
     enableHTMLButton('extra-rearbenchconfiguration-rearBench-btn');
     showSelection('extra-rearbenchconfiguration-rearBench-btn');
