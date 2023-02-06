@@ -127,7 +127,7 @@ export default class ConfigFinish extends Component {
     }
 
     getConfigurationBody(optionalInfo, email, marketing, countryCode) {
-        return { ...this.api.defaultConfig, extraInfo: optionalInfo.value, country: countryCode, sendermail: email.value, marketing: marketing.checked, orderId: getOrderId(this.api) };
+        return { ...this.api.defaultConfig, extraInfo: optionalInfo.value, countryCode, sendermail: email.value, marketing: marketing.checked, orderId: getOrderId(this.api) };
     }
 
     async buildErrorResponse(errorMsg, popupForm, cancelOrder, popupCard, popupHolder) {
